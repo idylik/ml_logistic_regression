@@ -114,8 +114,6 @@ class RegLogistiqueMiniBatch:
 
         for i in range(n_epochs):
             self.gradient(x_train, y, batchsize, stepsize, i)
-            # self.losses = np.append(self.losses, self.loss(x_train,y))
-            # self.accuracies = np.append(self.accuracies, self.test_accuracy(x_train,y))
 
         end = time.time()
         self.train_duration = end - start
